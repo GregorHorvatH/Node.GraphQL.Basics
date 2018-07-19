@@ -7,7 +7,7 @@
 - port: 5432
 
 ## fetch example
-`fetch('http://localhost:3000/graphql', {`
+`fetch('http://localhost:3000/graphql', {`\
 `	method: 'POST',`
 `	headers: { 'Content-Type': 'application/json' },`
 `  	body: JSON.stringify({`
