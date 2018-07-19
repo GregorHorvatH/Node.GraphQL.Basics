@@ -2,6 +2,7 @@ const Express = require('express');
 const GraphHTTP = require('express-graphql');
 const schema = require('./schema');
 const path = require("path");
+const cors = require("cors");
 
 // Config
 const APP_PORT = 3000;
@@ -9,8 +10,9 @@ const APP_PORT = 3000;
 // Start
 const app = Express();
 
+app.use(cors()); // not having cors enabled will cause an access control error
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname + '/views/index.html'));
+  res.sendFile(path.join(__dirname + '/../views/index.html'));
 });
 
 // GraphQL

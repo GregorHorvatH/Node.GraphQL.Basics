@@ -15,6 +15,7 @@
     "babel-register": "^6.4.3",
     "babel-relay-plugin": "^0.6.3",
     "bluebird": "^3.2.1",
+    "cors": "^2.8.4",
     "express": "^4.16.3",
     "express-graphql": "^0.6.12",
     "faker": "^4.1.0",
