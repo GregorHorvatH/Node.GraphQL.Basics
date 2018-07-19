@@ -10,7 +10,9 @@ const APP_PORT = 3000;
 // Start
 const app = Express();
 
-app.use(cors()); // not having cors enabled will cause an access control error
+// not having cors enabled will cause an access control error
+app.use(cors());
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname + '/../views/index.html'));
 });
